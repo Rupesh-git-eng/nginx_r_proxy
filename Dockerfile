@@ -5,4 +5,4 @@ RUN  dnf install -y nginx && yum clean all && rm -rf /var/cache/yum
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY default.conf /etc/nginx/conf.d/default.conf
 
-EXPOSE 80
+EXPOSE 8080
