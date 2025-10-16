@@ -1,4 +1,5 @@
 FROM registry.access.redhat.com/ubi9/ubi:9.6
+RUN  dnf install -y nginx
 
 # Remove the default config
 RUN rm /etc/nginx/conf.d/default.conf
