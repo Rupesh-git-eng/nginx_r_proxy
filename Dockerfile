@@ -6,3 +6,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 8080
+
+USER nginxuser
+
+CMD ["nginx", "-g", "daemon off;"]
